@@ -1,7 +1,6 @@
 # FlexiBin
 
-> [!IMPORTANT]  
-> This the project is as it is! I have published it in case others find the idea useful and want to replicate it. Unfortunately i don't have the time to respond to change requests, adapt the code for other hardware variants or for any kind of support. So feel free to do whatever you want with it, fork it, change it according to your ideas, but I will not handle any PRs.
+
 
 ## What is FlexiBin?
 A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
@@ -15,6 +14,9 @@ Because the 3 garbage cans in our front garden had been an eyesore for many year
 Of course, there are already countless off-the-shelf solutions available for this problem, but none of them are smart. So I thought: "Hey, why not completely over engineer a new solution for that problem?" :wink:
 
 ## How it's done?
+> [!IMPORTANT]  
+> This the project is as it is! I have published it in case others find the idea useful and want to replicate it. Unfortunately i don't have the time to respond to change requests, adapt the code for other hardware variants or for any kind of support. So feel free to do whatever you want with it, fork it, change it according to your ideas, but I will not handle any PRs.
+
 I don't want to go into detail here about the construction of the wooden parts, because every situation on site is different and you have to build your own individual box anyway. Just this much: the desk frame is mounted on a raised wooden frame inside the box so that the maximum travel distance of 65 cm can be fully utilized. I use the EC5B frame from Flexispot, most (all?) Flexispot frames use Loctek Motion controllers so other models should also work, but of course I cannot guarantee this. The advantage of the Loctek Motion controllers is that the communication protocol has fortunately already been reverse engineered:
 A big thank you to https://github.com/iMicknl/LoctekMotion_IoT and others! The project would not have been possible without their preparatory work.
 
