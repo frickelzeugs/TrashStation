@@ -19,7 +19,7 @@ Beside the desk frame I used the following parts:
 - LED-Strip (I used a 24V variant, but 12V will also work)
 - a suitable power supply for the LED-Strip
 
-The following picture shows how all components are connected to each other:
+The following picture shows how all components are wired together:
 
 ![Wiring](doc/FlexiBin-wiring.jpg)
 
