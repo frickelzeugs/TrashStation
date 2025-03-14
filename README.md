@@ -2,6 +2,9 @@
 
 ## What is FlexiBin?
 A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
+
+<img src="doc/flexibin-closed.jpg" alt="closed" width="400"> <img src="doc/flexibin-open.jpg" alt="opened" width="400">
+
 ![in action](doc/FlexiBin-in-action.gif)
 
 ## Why?
@@ -25,4 +28,4 @@ The following picture shows how all components are wired together:
 ![Wiring](doc/FlexiBin-wiring.jpg)
 
 ## How to build and flash the project to the ESP32?
-Just download the FlexiBin.ino project and build and flash to you ESP32 with Arduino Studio. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
+Just download the FlexiBin.ino project and build and flash to your ESP32 with Arduino Studio. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
