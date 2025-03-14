@@ -6,3 +6,7 @@ A smart garbage bin enclosure based on a height-adjustable desk. Controlled loca
 ## Why?
 Because the 3 garbage cans in our front garden had been an eyesore for many years and we now wanted a nice enclosure/covering for them. Last year the time had finally come.
 Of course, there are already countless off-the-shelf solutions available for this problem, but none of them are smart. So I thought: "Hey, why not completely over engineer a new solution for that problem?" :wink:
+
+![Wiring](doc/FlexiBin-wiring.jpg)
+
+
