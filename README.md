@@ -2,6 +2,7 @@
 
 ## What is FlexiBin?
 A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
+![in action](doc/FlexiBin-in-action.gif)
 
 ## Why?
 Because the 3 garbage cans in our front garden had been an eyesore for many years and we now wanted a nice enclosure/covering for them. Last year the time had finally come.
