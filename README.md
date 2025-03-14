@@ -1,5 +1,8 @@
 # FlexiBin
 
+> [!IMPORTANT]  
+> This the project is as it is! I have published it in case others find the idea useful and want to replicate it. Unfortunately i don't have the time to respond to change requests, adapt the code for other hardware variants or for any kind of support. So feel free to do whatever you want with it, fork it, change it according to your ideas, but I will not handle any PRs.
+
 ## What is FlexiBin?
 A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
 
