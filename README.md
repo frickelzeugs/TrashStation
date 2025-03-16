@@ -32,5 +32,31 @@ The following picture shows how all components are wired together:
 
 ![Wiring](doc/FlexiBin-wiring.jpg)
 
+## What features does Flexibin support?
+- Push-Button for local operation
+    - toggles between preset 1=closed and preset 2=opened (positions must be saved beforehand via the control panel)
+    - when moving, pressing the button stops the movement
+    - LED ring indicates the status of the action performed when the button is pressed
+        - solid blue: button will open the box
+        - solid red: button will close the box
+        - flashing red: box is moving, button will stop movement
+- MQTT
+    - Control-Topics (subscribed by FlexiBin)
+        - flexibin/command
+            - Supported Commands:
+            - preset1
+            - preset2
+            - preset3
+            - preset4
+            - wake
+            - moveup
+            - movedown
+            - enableLedStrip
+            - disableLedStrip
+    - Status-Topics (published by FlexiBin)
+        - muelltonne/position (current posision of desk in centimeters, e.g. "62.0")
+        - muelltonne/lwt (last will and testament)
+        - muelltonne/log (last log message, used for debugging)
+
 ## How to build and flash the project to the ESP32?
 Just download the FlexiBin.ino project and build and flash to your ESP32 with Arduino Studio. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
