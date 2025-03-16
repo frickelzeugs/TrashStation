@@ -40,8 +40,11 @@ The following picture shows how all components are wired together:
         - solid blue: button will open the box
         - solid red: button will close the box
         - flashing red: box is moving, button will stop movement
-- MQTT
-    - Control-Topics (subscribed by FlexiBin)
+- LED-Strip support
+    - The Led-Strip is activated from an opening height of 95 cm and deactivated again below this height
+    - Dimming curve for activation/deactivation
+- MQTT-Support
+    - Subscribed topics (to control FlexiBin)
         - flexibin/command
             - Supported Commands:
             - preset1
@@ -51,11 +54,11 @@ The following picture shows how all components are wired together:
             - wake
             - moveup
             - movedown
-            - enableLedStrip
-            - disableLedStrip
-    - Status-Topics (published by FlexiBin)
+            - disableLedStrip (disable automatic LED strip control, e.g. you may want to prevent the led strip from being switched on in daylight)
+            - enableLedStrip (enable automatic LED strip control)
+    - Published topics (FlexiBin reports the status to them)
         - muelltonne/position (current posision of desk in centimeters, e.g. "62.0")
-        - muelltonne/lwt (last will and testament)
+        - muelltonne/lwt (last will and testament, to monitor status of FlexiBin, will contain "Offline" or "Online")
         - muelltonne/log (last log message, used for debugging)
 
 ## How to build and flash the project to the ESP32?
