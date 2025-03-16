@@ -62,4 +62,7 @@ The following picture shows how all components are wired together:
         - flexibin/log (last log message, used for debugging)
 
 ## How to build and flash the project to the ESP32?
-Just download the FlexiBin.ino project and build and flash to your ESP32 with Arduino Studio. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
+### Preparation
+Download the FlexiBin.ino project and open it with your Arduino IDE. Adjust the WiFi credentials and MQTT broker credentials. If your GPIO assignment differs from the diagram, please also adjust it accordingly.
+### Flashing
+Download the board package for ESP32 and build and flash to your ESP32 with Arduino IDE. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
