@@ -57,9 +57,9 @@ The following picture shows how all components are wired together:
             - disableLedStrip (disable automatic LED strip control, e.g. you may want to prevent the led strip from being switched on in daylight)
             - enableLedStrip (enable automatic LED strip control)
     - Published topics (FlexiBin reports the status to them)
-        - muelltonne/position (current posision of desk in centimeters, e.g. "62.0")
-        - muelltonne/lwt (last will and testament, to monitor status of FlexiBin, will contain "Offline" or "Online")
-        - muelltonne/log (last log message, used for debugging)
+        - flexibin/position (current posision of desk in centimeters, e.g. "62.0")
+        - flexibin/lwt (last will and testament, to monitor status of FlexiBin, will contain "Offline" or "Online")
+        - flexibin/log (last log message, used for debugging)
 
 ## How to build and flash the project to the ESP32?
 Just download the FlexiBin.ino project and build and flash to your ESP32 with Arduino Studio. If you've never done that before, ask any AI (e.g. ChatGPT) of your choice how to do that.
