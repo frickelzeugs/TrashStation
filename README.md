@@ -44,23 +44,23 @@ The following picture shows how all components are wired together:
 - LED-Strip support
     - The Led-Strip is activated from an opening height of 95 cm and deactivated again below this height
     - Dimming curve for activation/deactivation
-- MQTT-Support
-    - Subscribed topics (to control FlexiBin)
-        - flexibin/command
-            - Supported Commands:
-            - preset1
-            - preset2
-            - preset3
-            - preset4
-            - wake
-            - moveup
-            - movedown
-            - disableLedStrip (disable automatic LED strip control, e.g. you may want to prevent the led strip from being switched on in daylight)
-            - enableLedStrip (enable automatic LED strip control)
-    - Published topics (FlexiBin reports the status to them)
-        - flexibin/position (current posision of desk in centimeters, e.g. "62.0")
-        - flexibin/lwt (last will and testament, to monitor status of FlexiBin, will contain "Offline" or "Online")
-        - flexibin/log (last log message, used for debugging)
+- Control/Status over MQTT
+
+MQTT-Topic | Values | Description
+-------- | -------- | -------- 
+flexibin/command   | see possible commands below:  | used to trigger a FlexiBin command
+|| "preset1" |
+|| "preset2" |
+|| "preset3" |
+|| "preset4" |
+|| "wake" |
+|| "moveup" |
+|| "movedown" |
+|| "disableLedStrip" | disable automatic LED strip control, e.g. you may want to prevent the led strip from being switched on in daylight
+|| "enableLedStrip" | enable automatic LED strip control
+flexibin/position  | float value without unit, e.g. "62.0" | current posision of desk in centimeters
+flexibin/lwt  | "Online" or "Offline" | last will and testament, to monitor status of FlexiBin
+flexibin/log  | String | last log message, used for debugging
 
 ## How to build and flash the project to the ESP32?
 ### Preparation
