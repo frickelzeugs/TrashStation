@@ -65,7 +65,7 @@ flexibin/log  | String | last log message, used for debugging
 ## How to build and flash the project to the ESP32?
 ### Preparation
 Download the FlexiBin.ino project and open it with your Arduino IDE. Adjust your WiFi and MQTT configuration in the file:
-```
+```cpp
 // WiFi- and MQTT Configuration
 const char* wifi_ssid = "******************************";
 const char* wifi_password = "******************************";
@@ -80,9 +80,9 @@ const char* mqtt_topic_lwt = "flexibin/lwt"; // last will and testament
 const char* mqtt_topic_log = "flexibin/log";
 ```
 
-If your GPIO assignment differs from the diagram, please also adjust it accordingly here:
+If your GPIO assignment differs from the wiring diagram above, please also adjust it accordingly here:
 
-```
+```cpp
 //Loctek Motion controller pins
 #define displayPin20 4           // RJ45 connector of Loctek Motion controller: Pin20 for power on the desk controller
 #define rxPin 16                 // RJ45 connector of Loctek Motion controller: RX-Pin
