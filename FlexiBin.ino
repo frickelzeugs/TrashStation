@@ -16,15 +16,15 @@
 // WiFi- and MQTT Configuration
 const char* wifi_ssid = "******************************";
 const char* wifi_password = "******************************";
-const char* hostname = "Muelltonne";
+const char* hostname = "FlexiBin";
 const char* mqtt_server = "192.168.x.x";
 const int   mqtt_port = 1883;
 const char* mqtt_user = "*********************";
 const char* mqtt_password = "*********************";
-const char* mqtt_topic_command = "muelltonne/command";
-const char* mqtt_topic_position = "muelltonne/position";
-const char* mqtt_topic_lwt = "muelltonne/lwt"; // last will and testament
-const char* mqtt_topic_log = "muelltonne/log";
+const char* mqtt_topic_command = "flexibin/command";
+const char* mqtt_topic_position = "flexibin/position";
+const char* mqtt_topic_lwt = "flexibin/lwt"; // last will and testament
+const char* mqtt_topic_log = "flexibin/log";
 
 
 enum LedColor {
