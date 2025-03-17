@@ -97,4 +97,37 @@ If your GPIO assignment differs from the wiring diagram above, please also adjus
 ```
 
 ### Flashing
-Download the board package for ESP32 and build and flash to your ESP32 with Arduino IDE. If you've never done that before, ask any AI of your choice (e.g. ChatGPT) how to do that.
+Flashing the ESP32 with the FlexiBin firmware is a straightforward process. Make sure your ESP32 is properly connected to your PC and that the necessary drivers are installed.
+
+#### 1. Requirements
+- Install the [Arduino IDE](https://www.arduino.cc/en/software)
+- Install the ESP32 board in the Arduino IDE via the Board Manager
+- Add the following libraries in the Arduino IDE:
+  - `WiFi` (included in the ESP32 core)
+  - `PubSubClient` for MQTT support
+
+#### 2. Connect the ESP32 to Your PC
+Connect your ESP32 to your computer via USB. Check the assigned COM port in the Device Manager (Windows) or by running:
+```sh
+ls /dev/tty.*
+```
+(on Mac/Linux).
+
+#### 3. Compile and Upload
+1. Open the `FlexiBin.ino` file in the Arduino IDE.
+2. In the Arduino IDE, select your ESP32 model under **Tools → Board**.
+3. Select the correct COM port under **Tools → Port**.
+4. Click **Upload** to flash the firmware onto the ESP32.
+
+#### 4. Monitor Serial Output
+After a successful upload, open the **Serial Monitor** in the Arduino IDE (baud rate: `115200`) to monitor the startup process. Look for messages such as:
+```sh
+WiFi connected
+MQTT connected
+```
+If you encounter issues:
+- Verify the WiFi and MQTT settings in `FlexiBin.ino`.
+- Ensure your ESP32 is in the correct boot mode (press and hold the `BOOT` button while flashing if needed).
+
+Once flashing is complete, your FlexiBin is ready to use! 🎉
+
