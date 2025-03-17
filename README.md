@@ -8,6 +8,7 @@ A smart garbage bin enclosure based on a height-adjustable desk. Controlled loca
 <img src="doc/flexibin-closed.jpg" alt="closed" width="400"> <img src="doc/flexibin-open.jpg" alt="opened" width="400">
 
 ![in action](doc/FlexiBin-in-action.gif)
+<br>(timelapse)
 
 ## Why?
 Because the 3 garbage cans in our front garden had been an eyesore for many years and we now wanted a nice enclosure/covering for them. Last year the time had finally come.
