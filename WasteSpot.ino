@@ -16,15 +16,15 @@
 // WiFi- and MQTT Configuration
 const char* wifi_ssid = "******************************";
 const char* wifi_password = "******************************";
-const char* hostname = "WasteSpot";
+const char* hostname = "TrashStation";
 const char* mqtt_server = "192.168.x.x";
 const int   mqtt_port = 1883;
 const char* mqtt_user = "*********************";
 const char* mqtt_password = "*********************";
-const char* mqtt_topic_command = "wastespot/command";
-const char* mqtt_topic_position = "wastespot/position";
-const char* mqtt_topic_lwt = "wastespot/lwt"; // last will and testament
-const char* mqtt_topic_log = "wastespot/log";
+const char* mqtt_topic_command = "trashstation/command";
+const char* mqtt_topic_position = "trashstation/position";
+const char* mqtt_topic_lwt = "trashstation/lwt"; // last will and testament
+const char* mqtt_topic_log = "trashstation/log";
 
 
 enum LedColor {
