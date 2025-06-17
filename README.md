@@ -3,7 +3,7 @@
 
 
 ## What is TrashStation?
-A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
+A smart enclosure for garbage cans based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
 
 <img src="doc/trashstation-closed.jpg" alt="closed" width="400"> <img src="doc/trashstation-open.jpg" alt="opened" width="400">
 
