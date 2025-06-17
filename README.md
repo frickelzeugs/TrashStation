@@ -1,13 +1,13 @@
-# FlexiBin
+# WasteSpot
 
 
 
-## What is FlexiBin?
+## What is WasteSpot?
 A smart garbage bin enclosure based on a height-adjustable desk. Controlled locally via push-button or via MQTT with an ESP32.
 
-<img src="doc/flexibin-closed.jpg" alt="closed" width="400"> <img src="doc/flexibin-open.jpg" alt="opened" width="400">
+<img src="doc/wastespot-closed.jpg" alt="closed" width="400"> <img src="doc/wastespot-open.jpg" alt="opened" width="400">
 
-![in action](doc/FlexiBin-in-action.gif)
+![in action](doc/WasteSpot-in-action.gif)
 <br>(timelapse)
 
 ## Why?
@@ -31,9 +31,9 @@ Beside the desk frame I used the following parts:
 
 The following picture shows how all components are wired together:
 
-![Wiring](doc/FlexiBin-wiring.jpg)
+![Wiring](doc/WasteSpot-wiring.jpg)
 
-## What features does Flexibin support?
+## What features does WasteSpot support?
 - Push-Button for local operation
     - toggles between preset 1=closed and preset 2=opened (positions must be saved beforehand via the control panel)
     - when moving, pressing the button stops the movement
@@ -48,7 +48,7 @@ The following picture shows how all components are wired together:
 
 MQTT-Topic | Values | Description
 -------- | -------- | -------- 
-flexibin/command   | see possible commands below:  | used to trigger a FlexiBin command
+wastespot/command   | see possible commands below:  | used to trigger a WasteSpot command
 || "preset1" |
 || "preset2" |
 || "preset3" |
@@ -58,26 +58,26 @@ flexibin/command   | see possible commands below:  | used to trigger a FlexiBin 
 || "movedown" |
 || "disableLedStrip" | disable automatic LED strip control, e.g. you may want to prevent the led strip from being switched on in daylight
 || "enableLedStrip" | enable automatic LED strip control
-flexibin/position  | float value without unit, e.g. "62.0" | current posision of desk in centimeters
-flexibin/lwt  | "Online" or "Offline" | last will and testament, to monitor status of FlexiBin
-flexibin/log  | String | last log message, used for debugging
+wastespot/position  | float value without unit, e.g. "62.0" | current posision of desk in centimeters
+wastespot/lwt  | "Online" or "Offline" | last will and testament, to monitor status of WasteSpot
+wastespot/log  | String | last log message, used for debugging
 
 ## How to build and flash the project to the ESP32?
 ### Preparation
-Download the FlexiBin.ino project and open it with your Arduino IDE. Adjust your WiFi and MQTT configuration in the file:
+Download the WasteSpot.ino project and open it with your Arduino IDE. Adjust your WiFi and MQTT configuration in the file:
 ```cpp
 // WiFi- and MQTT Configuration
 const char* wifi_ssid = "******************************";
 const char* wifi_password = "******************************";
-const char* hostname = "FlexiBin";
+const char* hostname = "WasteSpot";
 const char* mqtt_server = "192.168.x.x";
 const int   mqtt_port = 1883;
 const char* mqtt_user = "*********************";
 const char* mqtt_password = "*********************";
-const char* mqtt_topic_command = "flexibin/command";
-const char* mqtt_topic_position = "flexibin/position";
-const char* mqtt_topic_lwt = "flexibin/lwt"; // last will and testament
-const char* mqtt_topic_log = "flexibin/log";
+const char* mqtt_topic_command = "wastespot/command";
+const char* mqtt_topic_position = "wastespot/position";
+const char* mqtt_topic_lwt = "wastespot/lwt"; // last will and testament
+const char* mqtt_topic_log = "wastespot/log";
 ```
 
 If your GPIO assignment differs from the wiring diagram above, please also adjust it accordingly here:
@@ -97,7 +97,7 @@ If your GPIO assignment differs from the wiring diagram above, please also adjus
 ```
 
 ### Flashing
-Flashing the ESP32 with the FlexiBin firmware is a straightforward process. Make sure your ESP32 is properly connected to your PC and that the necessary drivers are installed.
+Flashing the ESP32 with the WasteSpot firmware is a straightforward process. Make sure your ESP32 is properly connected to your PC and that the necessary drivers are installed.
 
 #### 1. Requirements
 - Install the [Arduino IDE](https://www.arduino.cc/en/software)
@@ -114,7 +114,7 @@ ls /dev/tty.*
 (on Mac/Linux).
 
 #### 3. Compile and Upload
-1. Open the `FlexiBin.ino` file in the Arduino IDE.
+1. Open the `WasteSpot.ino` file in the Arduino IDE.
 2. In the Arduino IDE, select your ESP32 model under **Tools → Board**.
 3. Select the correct COM port under **Tools → Port**.
 4. Click **Upload** to flash the firmware onto the ESP32.
@@ -126,8 +126,8 @@ WiFi connected
 MQTT connected
 ```
 If you encounter issues:
-- Verify the WiFi and MQTT settings in `FlexiBin.ino`.
+- Verify the WiFi and MQTT settings in `WasteSpot.ino`.
 - Ensure your ESP32 is in the correct boot mode (press and hold the `BOOT` button while flashing if needed).
 
-Once flashing is complete, your FlexiBin is ready to use! 🎉
+Once flashing is complete, your WasteSpot is ready to use! 🎉
 
