@@ -18,7 +18,11 @@ Of course, there are already countless off-the-shelf solutions available for thi
 > [!IMPORTANT]  
 > The project is as it is! I have published it in case others find the idea useful and want to replicate it. Unfortunately i don't have the time to respond to feature requests, adapt the code for other hardware variants, handling PRs or for any kind of support. So feel free to do whatever you want with it, fork it, change it according to your ideas, but for me, the project is completed and I want to move on to other things.
 
-I don't want to go into detail here about the construction of the wooden parts, because every situation on site is different and you have to build your own individual box anyway. Just this much: the desk frame is mounted on a raised wooden frame inside the box so that the maximum travel distance of 65 cm can be fully utilized. I use the EC5B frame from Flexispot, most (all?) Flexispot frames use Loctek Motion controllers so other models should also work, but of course I cannot guarantee this. The advantage of the Loctek Motion controllers is that the communication protocol has fortunately already been reverse engineered:
+I don't want to go into detail here about the construction of the wooden parts, because every situation on site is different and you have to build your own individual box anyway. Just this much: the desk frame is mounted on a raised wooden frame inside the box so that the maximum travel distance of 65 cm can be fully utilized. Meanwhile I have posted a video on YouTube about the enclosure, which also cover how it is constructed, e.g. the wooden structure. Unfortunately, it's in german, but maybe you will find it helpful anyway:
+[![TrashStation FAQ Video](http://img.youtube.com/vi/rn-PrTDK4Tg/0.jpg)](http://www.youtube.com/watch?v=rn-PrTDK4Tg "TrashStation FAQ")
+
+## Which desk to use?
+I use the EC5B frame from Flexispot, most (all?) Flexispot frames use Loctek Motion controllers so other models should also work, but of course I cannot guarantee this. The advantage of the Loctek Motion controllers is that the communication protocol has fortunately already been reverse engineered:
 A big thank you to https://github.com/iMicknl/LoctekMotion_IoT and others! The project would not have been possible without their preparatory work.
 
 Beside the desk frame I used the following parts:
